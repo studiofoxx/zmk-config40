@@ -38,7 +38,7 @@
 				&kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7    &kp N8    &kp N9    &kp N0   &kp BSPC
 				&trans    &trans &trans &trans &trans &trans &trans &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans
 				&trans    &trans &trans &trans &trans &trans &trans &trans    &trans    &trans    &trans   &trans
-				&trans    &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_DN &kp PG_UP &kp END  &trans
+				&trans    &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_DN &mkp LCLK &mkp RCLK  &trans
 			>;
 		};
 
