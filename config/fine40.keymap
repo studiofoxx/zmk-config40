@@ -39,7 +39,7 @@
 				&kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7    &kp N8    &kp N9    &kp N0   &kp BSPC
 				&trans    &trans &trans &trans &trans &trans &trans &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans
 				&trans    &trans &trans &trans &trans &trans &trans &trans    &trans    &trans    &trans   &trans
-				& NUM    &trans &trans &trans &trans &trans &trans &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp C_MUTE
+				&kp NUM    &trans &trans &trans &trans &trans &trans &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp C_MUTE
 			>;
 		};
 
@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp NUM &kp NUM >
+                = <&macro_tap &kp_NUM &kp_NUM >
                 ;
         };
     };
