@@ -19,7 +19,7 @@
 				&kp ESC   &kp Q    &kp W    &kp E    &kp R &kp T     &kp Y       &kp U     &kp I     &kp O     &kp P     &kp BSPC
 				&lt 3 TAB &kp A    &kp S    &kp D    &kp F &kp G     &kp H       &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp N       &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RET
-				&kp LCTRL &kp LGUI &kp LALT &lt 2 BSLH &kp SPACE     &mo 1 &lt 1 SPACE &kp BSPC &zed_em_kay &mkp MB1 &mkp MB2 &kp C_PP
+				&kp LCTRL &kp LGUI &kp LALT &lt 2 BSLH &kp SPACE     &mo 1 &lt 1 SPACE &kp BSPC &mousescroll &mkp MB1 &mkp MB2 &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -56,13 +56,11 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        mousescroll: mousescroll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_tap &kp NUM &kp NUM>
                 ;
         };
     };
