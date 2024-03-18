@@ -60,7 +60,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LNLCK &kp LNLCK>
+                = <&kp LNLCK>
+		, <&macro_wait_time 19>
+		, <&kp LNLCK>
                 ;
         };
     };
