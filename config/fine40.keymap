@@ -61,7 +61,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp_NUM &kp_NUM >
-                ;
         };
     };
 };
