@@ -57,8 +57,6 @@
 / {
     macros {
         mousescroll: mousescroll {
-            compatible = "zmk,behavior-macro";
-	    #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp NUM>
 		, <&macro_tap &kp NUM>
