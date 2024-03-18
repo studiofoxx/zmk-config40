@@ -10,6 +10,18 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define STRINGIFY(x) #x
+#define EXPAND_AND_STRINGIFY(x) STRINGIFY(x)
+#define MACRO(NAME, BINDINGS) \
+  mcr_##NAME: mcr_##NAME { \
+    label = EXPAND_AND_STRINGIFY(mcr_##NAME); \
+    compatible = "zmk,behavior-macro"; \
+    #binding-cells = <0>; \
+    wait-ms = <20>; \
+    tap-ms = <10>; \
+    bindings = <BINDINGS>; \
+  };
+MACRO(zed_em, &macro_tap &kp NUM &kp NUM)
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -52,15 +64,4 @@
 			>;
 		};
 	};
-};
-
-/ {
-    macros {
-        zed_em: zed_em {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp NUM &kp NUM >
-        };
-    };
 };
